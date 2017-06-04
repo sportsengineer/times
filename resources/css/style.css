@@ -1,0 +1,181 @@
+/*----Start Header-------*/
+
+
+header
+{
+font-family: Verdana;
+ font-size: 14px;
+ font-weight: bold;
+ display:flex;
+ border-bottom: solid 1px black;
+ align-items: center;
+ position: fixed;
+ justify-content: space-between;
+ width: 100%
+
+}
+
+.logo{
+  color:MediumAquamarine;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+
+nav {
+  padding-right: 10px;
+  height: 55px;
+
+}
+
+  .logo img {
+    margin-right:  12px;
+  }
+
+
+nav li {
+  display:inline;
+  list-style: none;
+  padding: 0 10px;
+
+
+}
+
+
+nav a{
+  color:black;
+
+}
+
+
+/*----body----- */
+
+
+section{
+
+display: flex;
+justify-content: space-around;
+font-family: Georgia;
+ font-size: 17px;
+ color: black;
+
+}
+
+.main-column{
+  width:630px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+.second-column{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-column{
+  width:240px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+article-image {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+
+.main-lead-article {
+    width: 630px;
+  }
+ .main-lead-article .article-image {
+  background-image: url(../img-story-main.png);
+  font-size: 40px;
+}
+
+.secondary-articles {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.earth-spin{
+background-image: url(../images/img-story-2.png");
+}
+
+
+
+.erase-memory {
+  background-image: url("../images/img-story-3.png");
+}
+
+
+.cat-control {
+  background-image: url("../images/img-story-1.png");
+}
+
+
+.earth-spin,
+.erase-memory,
+.cat-control {
+  text-align: center;
+}
+
+
+/*----Bites Section----*/
+
+.newsbites {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsbites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.newsbites span {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: solid 1px black;
+
+}
+
+
+
+/*----Footer----*/
+footer {
+background-color: MediumAquamarine;
+font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+justify-content: center;
+}
+
+
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+
+.footer-logo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
