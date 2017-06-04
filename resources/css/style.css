@@ -94,7 +94,7 @@ article-image {
     width: 630px;
   }
  .main-lead-article .article-image {
-  background-image: url(../img-story-main.png);
+  background-image: url("../images/img-story-main.png");
   font-size: 40px;
 }
 
@@ -106,7 +106,7 @@ article-image {
 }
 
 .earth-spin{
-background-image: url(../images/img-story-2.png");
+background-image: url("../images/img-story-2.png");
 }
 
 
