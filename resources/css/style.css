@@ -1,181 +1,193 @@
-/*----Start Header-------*/
-
-
-header
-{
-font-family: Verdana;
- font-size: 14px;
- font-weight: bold;
- display:flex;
- border-bottom: solid 1px black;
- align-items: center;
- position: fixed;
- justify-content: space-between;
- width: 100%
+header{
+  position: fixed;
+  top:0px;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
 
 }
 
 .logo{
-  color:MediumAquamarine;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-
-
-nav {
-  padding-right: 10px;
-  height: 55px;
-
-}
-
-  .logo img {
-    margin-right:  12px;
-  }
-
-
-nav li {
-  display:inline;
-  list-style: none;
-  padding: 0 10px;
-
-
-}
-
-
-nav a{
-  color:black;
-
-}
-
-
-/*----body----- */
-
-
-section{
-
-display: flex;
-justify-content: space-around;
-font-family: Georgia;
- font-size: 17px;
- color: black;
-
-}
-
-.main-column{
-  width:630px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-
-
-.second-column{
-  width: 300px;
   display: flex;
-  flex-direction: column;
-}
-
-.third-column{
-  width:240px;
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
+  align-items: center;
 
 }
 
+.logo span{
+  color: MediumAquamarine;
+  margin-left: 20px;
 
-article-image {
+}
+
+nav{
   display: flex;
+}
+
+nav span{
+  margin: 10px;
+  padding-right: 10px;
+}
+
+a{
+  color:black;
+}
+
+
+/*main*/
+
+
+body{
+  margin-top:120px;
+}
+
+main{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+
+
+
+}
+
+.column-large{
+  width: 630px;
+
+}
+
+.headline{
+display: flex;
+flex-direction: column;
+
+
+}
+
+.headline .image{
+  background-image: url("../images/img-story-main.png");
+}
+
+
+.image{
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
 
-.main-lead-article {
-    width: 630px;
-  }
- .main-lead-article .article-image {
-  background-image: url("../images/img-story-main.png");
-  font-size: 40px;
+  margin: auto;
+  height: 300px;
+  display: flex;
+
 }
 
-.secondary-articles {
+
+
+.extrait{
+  font-family: Georgia;
+font-size: 17px;
+color: black;
+}
+
+
+.articles{
+  display: flex;
+justify-content: space-around;
+}
+
+
+.article{
   display: flex;
   flex-direction: column;
   width: 300px;
-  justify-content: space-between;
+
+
 }
 
-.earth-spin{
-background-image: url("../images/img-story-2.png");
+.image.earth{
+  background-image: url("../images/img-story-2.png");
+    background-repeat: no-repeat;
 }
 
-
-
-.erase-memory {
+.image.camera{
   background-image: url("../images/img-story-3.png");
+  background-repeat: no-repeat;
 }
 
+.image.earth, .image.camera, .image.cat{
+  display: flex;
 
-.cat-control {
+ text-align: center;
+
+}
+
+.column-medium{
+  width: 300px;
+}
+
+.image.cat{
   background-image: url("../images/img-story-1.png");
 }
 
-
-.earth-spin,
-.erase-memory,
-.cat-control {
-  text-align: center;
-}
-
-
-/*----Bites Section----*/
-
-.newsbites {
-  display: flex;
-  flex-direction: column;
-}
-
-.newsbites h3 {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
+.column-third{
+  width: 240px;
 
 }
 
-.newsbites span {
+ .nav {
+
+  display: block;
+  border-bottom: 1px solid black;
   background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    padding: 10px;
+    color: DimGray
+
+
+}
+
+.newsbites{
+  font-size: 16px;
+ font-weight: bold;
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+
+
+footer{
+  background-color: MediumAquamarine;
+  margin: auto;
   font-family: Verdana;
   font-size: 12px;
-  color: DimGray;
-  border-bottom: solid 1px black;
-
-}
-
-
-
-/*----Footer----*/
-footer {
-background-color: MediumAquamarine;
-font-family: Verdana;
-  font-size: 12px;
   display: flex;
-justify-content: center;
-}
-
-
-
-.footer-top {
-  display: flex;
-  flex-direction: row;
+  height: 325px;
+  align-items: center;
   justify-content: center;
-  align-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
+.title , .navigation{
+  display: inline-block;
+}
 
-.footer-logo {
+.navigation{
+  margin-left: 25px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.title{
   font-family: Georgia;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
 }
